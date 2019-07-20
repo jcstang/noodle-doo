@@ -91,6 +91,16 @@ class MainTableViewController: UITableViewController {
         let singleReptile = listOfReptiles[indexPath.row]
         print(singleReptile)
     }
+    
+    
+    
+    
+    
+    //TODO: add prepare for segue
+    
+    //TODO: add perform segue
+    
+    //TODO: pass data! 
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

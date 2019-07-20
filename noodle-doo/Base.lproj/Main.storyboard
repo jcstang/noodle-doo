@@ -27,24 +27,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wch-Tb-l55">
-                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwx-eg-T6m">
-                                            <rect key="frame" x="317" y="40" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="32" y="39" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="wch-Tb-l55" firstAttribute="trailing" secondItem="Mwx-eg-T6m" secondAttribute="trailing" id="IVc-8z-lC9"/>
-                                        <constraint firstItem="wch-Tb-l55" firstAttribute="leading" secondItem="aRg-g8-mfx" secondAttribute="leadingMargin" id="Shg-SW-cI6"/>
-                                        <constraint firstItem="wch-Tb-l55" firstAttribute="trailing" secondItem="aRg-g8-mfx" secondAttribute="trailingMargin" id="mX5-pJ-sJB"/>
-                                        <constraint firstItem="Mwx-eg-T6m" firstAttribute="top" secondItem="wch-Tb-l55" secondAttribute="bottom" constant="8" symbolic="YES" id="qdg-8n-9OP"/>
-                                        <constraint firstItem="wch-Tb-l55" firstAttribute="top" secondItem="aRg-g8-mfx" secondAttribute="topMargin" id="tyu-L9-gvs"/>
+                                        <constraint firstItem="wch-Tb-l55" firstAttribute="top" secondItem="aRg-g8-mfx" secondAttribute="topMargin" id="7rZ-Zt-n3N"/>
+                                        <constraint firstItem="Mwx-eg-T6m" firstAttribute="top" secondItem="wch-Tb-l55" secondAttribute="bottom" constant="8" symbolic="YES" id="BZ4-7v-3wC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Mwx-eg-T6m" secondAttribute="bottom" constant="19" id="VXp-AU-XE2"/>
+                                        <constraint firstItem="wch-Tb-l55" firstAttribute="trailing" secondItem="aRg-g8-mfx" secondAttribute="trailingMargin" id="d3r-Hf-fzh"/>
+                                        <constraint firstItem="Mwx-eg-T6m" firstAttribute="leading" secondItem="aRg-g8-mfx" secondAttribute="leadingMargin" constant="16" id="fGr-v0-Y9D"/>
+                                        <constraint firstItem="wch-Tb-l55" firstAttribute="leading" secondItem="aRg-g8-mfx" secondAttribute="leadingMargin" id="h6H-b8-bqj"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -59,25 +61,44 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="hQK-Zk-dxg"/>
+                    <connections>
+                        <segue destination="g2E-Xo-CUm" kind="showDetail" identifier="reptileDetail" id="Syp-IT-h7C"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwt-CM-Mb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="410" y="145"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="fYb-T2-0gJ">
             <objects>
-                <viewController id="g2E-Xo-CUm" sceneMemberID="viewController">
+                <viewController id="g2E-Xo-CUm" customClass="DetailViewController" customModule="noodle_doo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6tQ-4W-Giu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reptile Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-nZ-gia">
+                                <rect key="frame" x="39" y="100" width="320" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sub Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-v2-bhJ">
+                                <rect key="frame" x="61" y="165" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="M24-Hu-mul"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsD-Yp-OO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="145"/>
+            <point key="canvasLocation" x="1288.8" y="144.82758620689657"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fip-Fb-YHA">

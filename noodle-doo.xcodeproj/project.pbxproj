@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1309B922E2B15600710C7C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1309B822E2B15600710C7C /* DetailViewController.swift */; };
 		8EA93B7222DE19E600D5A453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA93B7122DE19E600D5A453 /* AppDelegate.swift */; };
 		8EA93B7722DE19E600D5A453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA93B7522DE19E600D5A453 /* Main.storyboard */; };
 		8EA93B7A22DE19E600D5A453 /* noodle_doo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EA93B7822DE19E600D5A453 /* noodle_doo.xcdatamodeld */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E1309B822E2B15600710C7C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8EA93B6E22DE19E500D5A453 /* noodle-doo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noodle-doo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA93B7122DE19E600D5A453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EA93B7622DE19E600D5A453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				8EA93B7122DE19E600D5A453 /* AppDelegate.swift */,
 				8EA93B7522DE19E600D5A453 /* Main.storyboard */,
 				8EA93B8622DE1BC100D5A453 /* MainTableViewController.swift */,
+				8E1309B822E2B15600710C7C /* DetailViewController.swift */,
 				8EA93B7B22DE19E700D5A453 /* Assets.xcassets */,
 				8EA93B7D22DE19E700D5A453 /* LaunchScreen.storyboard */,
 				8EA93B8022DE19E700D5A453 /* Info.plist */,
@@ -141,6 +144,7 @@
 				8EA93B7A22DE19E600D5A453 /* noodle_doo.xcdatamodeld in Sources */,
 				8EA93B8722DE1BC100D5A453 /* MainTableViewController.swift in Sources */,
 				8EA93B7222DE19E600D5A453 /* AppDelegate.swift in Sources */,
+				8E1309B922E2B15600710C7C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
