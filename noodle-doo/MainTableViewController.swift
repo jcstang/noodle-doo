@@ -19,13 +19,19 @@ struct reptile {
     var sex: sex
 }
 
+let segueID: String = "reptileDetail"
+
 class reptileTableViewCell: UITableViewCell {
     //the label stuff here
     @IBOutlet weak var reptileName: UILabel!
     @IBOutlet weak var subName: UILabel!
 }
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, CanReceiveData {
+    func dataReceived(data: String) {
+        //TODO figure out what to do with data received
+    }
+    
     
     var listOfReptiles = [
         reptile(name: "Drax", birthDate: "5/5/5", sex: .male),
@@ -90,6 +96,8 @@ class MainTableViewController: UITableViewController {
         print("this row was pressed: \(indexPath.row) from this section \(indexPath.section)")
         let singleReptile = listOfReptiles[indexPath.row]
         print(singleReptile)
+        
+        performSegue(withIdentifier: segueID, sender: self)
     }
     
     
@@ -98,7 +106,6 @@ class MainTableViewController: UITableViewController {
     
     //TODO: add prepare for segue
     
-    //TODO: add perform segue
     
     //TODO: pass data! 
 
@@ -153,6 +160,12 @@ class MainTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == segueID {
+            let detailVC = segue.destination as! DetailViewController
+            detailVC.data = "blah"
+            
+            detailVC.delegate = self
+        }
     }
 
 }

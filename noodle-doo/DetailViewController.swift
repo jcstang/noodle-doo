@@ -9,11 +9,24 @@
 import UIKit
 
 //TODO: add protocol and delegate
+protocol CanReceiveData {
+    func dataReceived(data: String)
+}
 
 class DetailViewController: UIViewController {
+    
+    var delegate: CanReceiveData?
+    var data = " "
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if false {
+            delegate?.dataReceived(data: "detail")
+        }
 
         // Do any additional setup after loading the view.
     }
